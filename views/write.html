@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>통증 기록 페이지입니다.</h1>
+<form action="/write" method="post">
+    <label for="title">통증 부위</label>
+    <input type="text" name="area" id="area">
+    <br>
+    <label for="contents">통증 양상</label>
+    <input name="pattern" id="pattern" cols="20" rows="5"></textarea>
+    <br>
+    <label for="contents">통증 세부정보</label>
+    <textarea name="detail" id="detail"></textarea>
+    <br>
+    <!-- input submit -->
+    <input type="submit" value="통증 작성 완료">
+</form>
+{% endblock %}

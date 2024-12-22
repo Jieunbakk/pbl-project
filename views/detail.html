@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <h1>상세 페이지</h1>
+        <p>통증 부위: {{ detail.area }}</p>
+        <p>통증 양상: {{ detail.pattern }}</p>
+        <p>통증 세부정보: {{ detail.detail }}</p>
+{% endblock %}
